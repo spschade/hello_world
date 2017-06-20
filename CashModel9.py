@@ -51,6 +51,9 @@ result['DaysToPay'] = result['DaysToPay'].astype(np.int64)
 #Test Data_End ****************
 
 #OUTLOOK DATA_Start***********
+#Well this is completely messed up, are you sure we should do this?\
+
+a = bd.TD.reset_index()
 
 #groupby Month
 ol_mo = ol.set_index('Project ID').unstack()
